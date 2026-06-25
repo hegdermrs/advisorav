@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build
+node_modules/
+dist/
+build/
+
+# Netlify
+.netlify/
+.env
+.env.local
+
+# OS
+.cache/

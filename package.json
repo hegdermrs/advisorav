@@ -1,0 +1,21 @@
+{
+  "name": "advisor-av-landing",
+  "version": "1.0.0",
+  "description": "Professional landing page for Advisor AV - Financial advisor video content marketing",
+  "main": "lp.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": [
+    "financial advisor",
+    "video marketing",
+    "content creation",
+    "Los Angeles"
+  ],
+  "author": "Advisor AV",
+  "license": "Proprietary",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

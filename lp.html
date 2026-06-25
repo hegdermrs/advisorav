@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advisor AV helps financial advisors in Southern California become recognized local experts through professional video content creation and distribution.">
+    <meta name="keywords" content="financial advisor marketing, video content, Los Angeles advisors, wealth management, personal branding">
+    <meta name="author" content="Advisor AV">
+    <meta name="theme-color" content="#0F172A">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Advisor AV | Become the Recognized Financial Advisor in Your Community">
+    <meta property="og:description" content="Professional video content production for financial advisors. Get filmed, edited, and distributed to YouTube and podcasts.">
+    <meta property="og:image" content="https://advisorav.com/og-image.jpg">
+    <meta property="og:url" content="https://advisorav.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Advisor AV | Financial Advisor Video Marketing">
+    <meta name="twitter:description" content="Become the recognized advisor in your community with professional video content.">
+    <link rel="canonical" href="https://advisorav.com">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect fill='%230F172A' width='40' height='40' rx='8'/><text x='50%' y='55%' font-size='24' font-weight='bold' fill='white' text-anchor='middle' dominant-baseline='middle'>AV</text></svg>">
+    <title>Advisor AV | Become the Recognized Financial Advisor in Your Community</title>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3H5NxgQwjRD28VZSuBe8a6qcDA4zCUUJ5tsH953cfKU06OXmS+zV8e7J7KqH8rCl+USHvWIg1A7Zw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700;800&amp;display=swap');
+
+        :root {
+            --navy: #0F172A;
+            --gold: #C9A227;
+        }
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .section-header {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            color: #0F172A;
+            letter-spacing: -0.02em;
+        }
+
+        .navy-bg {
+            background-color: #0F172A;
+        }
+
+        .gold-accent {
+            color: #C9A227;
+        }
+
+        .clean-card {
+            background: white;
+            border: 1px solid #E2E8F0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .clean-card:hover {
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.04);
+            transform: translateY(-4px);
+            border-color: #C9A227;
+        }
+
+        .benefit-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .clean-card:hover .benefit-icon {
+            background: linear-gradient(135deg, #C9A227 0%, #B8941F 100%);
+            color: white;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            line-height: 2.75rem;
+            font-weight: 700;
+            color: #0F172A;
+        }
+
+        .testimonial-card {
+            background: white;
+            border: 1px solid #E2E8F0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .testimonial-card:hover {
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.08);
+            border-color: #C9A227;
+            transform: translateY(-2px);
+        }
+
+        .nav-scrolled {
+            box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px 0 rgb(0 0 0 / 0.06);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .finance-blue {
+            color: #1E40AF;
+        }
+
+        button, a[role="button"], input[type="button"], input[type="submit"] {
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::before, a[role="button"]::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        button:active::before, a[role="button"]:active::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #0F172A 0%, #1E40AF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        a[href^="mailto:"] {
+            position: relative;
+        }
+
+        .bg-slate-900:hover {
+            box-shadow: 0 20px 25px -5px rgb(15, 23, 42, 0.2);
+        }
+
+        .bg-white[href^="mailto:"]:hover {
+            border-color: #C9A227;
+            background: linear-gradient(135deg, #ffffff 0%, #F8FAFC 100%);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.08);
+        }
+
+        .border-slate-300[href^="mailto:"]:hover {
+            border-color: #C9A227;
+            background: #0F172A;
+            color: white;
+        }
+
+        h1 {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-header {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .clean-card, .testimonial-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .inline-flex[href^="mailto:"] {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-2xl tracking-tighter">AV</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-2xl tracking-tight">Advisor AV</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#how-it-works" class="text-slate-600 hover:text-slate-900 transition-colors">How it works</a>
+                    <a href="#results" class="text-slate-600 hover:text-slate-900 transition-colors">Results</a>
+                    <a href="#testimonials" class="text-slate-600 hover:text-slate-900 transition-colors">Stories</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-slate-900 transition-colors">Pricing</a>
+                </div>
+                
+                <div class="flex items-center gap-x-4">
+                    <a href="mailto:sarzoza@gmail.com"
+                       class="hidden md:inline-flex items-center justify-center px-6 py-3 text-sm font-semibold bg-white border border-slate-300 hover:bg-slate-50 text-slate-900 rounded-2xl transition-all active:scale-[0.985]">
+                        Book a call
+                    </a>
+                    <a href="mailto:sarzoza@gmail.com"
+                       class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold bg-slate-900 hover:bg-slate-800 text-white rounded-2xl transition-all active:scale-[0.985]">
+                        Start today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="max-w-screen-xl mx-auto px-6 pt-16 pb-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-sm font-medium mb-6">
+                <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                Now accepting Southern California advisors for Q1 2026
+            </div>
+            
+            <h1 class="text-5xl md:text-6xl leading-[1.05] tracking-tighter font-semibold text-slate-900 mb-6">
+                Walk into your local coffee shop and hear someone say<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-blue-600">"Hey, I saw you on YouTube."</span>
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-xl text-slate-600 mb-10">
+                Become the recognized go-to financial advisor high-net-worth families in Los Angeles, the Inland Empire, or Orange County actually choose.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:sarzoza@gmail.com"
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-x-3 px-8 py-4 text-lg font-semibold bg-slate-900 hover:bg-black text-white rounded-3xl transition-all active:scale-[0.985]">
+                    <span>Book your 1-2 day filming session</span>
+                </a>
+                <a href="#how-it-works"
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-x-2 px-8 py-4 text-lg font-semibold border border-slate-300 hover:bg-white text-slate-700 rounded-3xl transition-all active:scale-[0.985]">
+                    See how it works
+                </a>
+            </div>
+            
+            <div class="mt-8 flex items-center justify-center gap-x-8 text-sm text-slate-500">
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-emerald-500"></i>
+                    <span>1-2 days on-site</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-emerald-500"></i>
+                    <span>Hollywood-level production</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-emerald-500"></i>
+                    <span>Zero tech required</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem -->
+    <div class="max-w-screen-xl mx-auto px-6 py-16 border-t border-slate-200">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-xs font-semibold tracking-[2px] text-slate-500">THE REALITY MOST ADVISORS FACE</span>
+            </div>
+            
+            <div class="space-y-6 text-lg text-slate-700 leading-relaxed">
+                <p>Most financial advisors know they <span class="font-semibold">should</span> be showing up with video and podcasts to attract ideal clients. But the options that exist today are broken.</p>
+                
+                <p>You can travel to a distant studio… or film everything yourself and send raw footage to editors in another country. Either way, you (or someone on your team) still have to handle the technology, the lighting, the mics, the thumbnails, the editing decisions, the YouTube SEO, and the posting strategy.</p>
+                
+                <p>Even worse, most “done-for-you” video programs hand you AI-written scripts or templated case studies that sound exactly like every other advisor in the country. The content feels robotic, salesy, and interchangeable.</p>
+                
+                <div class="pt-4 border-l-4 border-slate-300 pl-6">
+                    <p class="font-medium text-slate-900">Here’s the part that stings:</p>
+                    <p class="mt-2">You’re already successful. You make good money. But in your own community — in Los Angeles, the Inland Empire, or Orange County — almost no one outside your existing clients actually knows who you are.</p>
+                    <p class="mt-3 text-slate-600">You can walk into a coffee shop, a networking event, or your kid’s school and remain completely invisible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution / Dream -->
+    <div class="bg-white border-y border-slate-200 py-16">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="section-header tracking-tighter">Become the advisor your community <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 via-blue-600 to-slate-900">already knows and trusts.</span></h2>
+                <p class="mt-4 text-xl text-slate-600">Advisor AV helps you create authentic, hyper-local video podcasts about life in your community — so you can become the trusted local figure high-net-worth families in Southern California turn to.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- Benefit 1 -->
+                <div class="clean-card rounded-3xl p-8 border-2 group">
+                    <div class="benefit-icon mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-video text-2xl text-slate-700"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl mb-3 group-hover:text-blue-600 transition-colors">On-site filming in your office (1–2 days max)</h3>
+                    <p class="text-slate-600">We bring everything. You just show up and talk. We film enough long-form episodes for a full month (or more) in a single visit.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="clean-card rounded-3xl p-8 border-2 group">
+                    <div class="benefit-icon mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-magic text-2xl text-slate-700"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl mb-3 group-hover:text-emerald-600 transition-colors">Completely hands-off production &amp; distribution</h3>
+                    <p class="text-slate-600">We edit, design thumbnails, set up and optimize your YouTube channel, distribute to all major podcast platforms, and create daily short-form clips that drive traffic back to your content.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="clean-card rounded-3xl p-8 border-2 group">
+                    <div class="benefit-icon mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-user-tie text-2xl text-slate-700"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl mb-3 group-hover:text-purple-600 transition-colors">Hollywood director &amp; screenwriter coaching</h3>
+                    <p class="text-slate-600">I personally direct you on camera the way I’ve directed actors and professionals for years. We help you relax, speak naturally, and tell compelling local stories that feel like a genuine conversation with a neighbor.</p>
+                </div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto mt-12 text-center">
+                <div class="inline-block bg-slate-900 text-white px-8 py-6 rounded-3xl">
+                    <p class="text-lg font-medium">Imagine walking into your favorite coffee shop and someone says:</p>
+                    <p class="mt-3 text-2xl font-semibold tracking-tight">"Hey… I saw you on YouTube."</p>
+                    <p class="mt-2 text-slate-300 text-sm">That moment changes everything.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How it Works -->
+    <div id="how-it-works" class="max-w-screen-xl mx-auto px-6 py-16">
+        <div class="max-w-2xl mx-auto text-center mb-12">
+            <span class="text-xs font-semibold tracking-[2px] text-slate-500">SIMPLE. HANDS-OFF. POWERFUL.</span>
+            <h2 class="section-header tracking-tighter mt-3">How it works</h2>
+        </div>
+        
+        <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8">
+            <div class="flex gap-5 group">
+                <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-slate-900 to-blue-600 text-white flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform duration-300">1</div>
+                <div>
+                    <div class="font-semibold text-lg group-hover:text-blue-600 transition-colors">We come to you</div>
+                    <p class="mt-2 text-slate-600">I arrive at your office with professional equipment. We film 4+ long-form episodes in just 1–2 days. You simply show up and talk naturally.</p>
+                </div>
+            </div>
+            <div class="flex gap-5 group">
+                <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-600 to-emerald-600 text-white flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform duration-300">2</div>
+                <div>
+                    <div class="font-semibold text-lg group-hover:text-emerald-600 transition-colors">We handle everything else</div>
+                    <p class="mt-2 text-slate-600">Editing, thumbnails, YouTube channel setup, podcast distribution, SEO titles, descriptions, and daily short-form clips across YouTube, X, and Instagram — all done for you.</p>
+                </div>
+            </div>
+            <div class="flex gap-5 group">
+                <div class="flex-shrink-0 w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-600 to-purple-600 text-white flex items-center justify-center font-bold text-xl group-hover:scale-110 transition-transform duration-300">3</div>
+                <div>
+                    <div class="font-semibold text-lg group-hover:text-purple-600 transition-colors">You become the local expert</div>
+                    <p class="mt-2 text-slate-600">Your community starts recognizing you. High-net-worth families who already know and trust you begin reaching out — often before they ever set foot in your office.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Credibility -->
+    <div class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-10">
+                    <span class="text-xs font-semibold tracking-[2px] text-slate-400">LED BY SOMEONE WHO UNDERSTANDS BOTH HOLLYWOOD AND FINANCE</span>
+                </div>
+
+                <div class="grid md:grid-cols-12 gap-x-12 items-center">
+                    <div class="md:col-span-7">
+                        <h3 class="text-3xl font-semibold tracking-tighter bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Sammy Sarzoza</h3>
+                        <p class="mt-4 text-lg text-slate-300">Hollywood-trained screenwriter, film director, and producer with nearly a decade of experience in post-production.</p>
+                        
+                        <div class="mt-8 space-y-4 text-sm">
+                            <div class="flex gap-4">
+                                <div class="w-5 mt-1 flex-shrink-0"><i class="fa-solid fa-check text-emerald-400"></i></div>
+                                <div>Delivered content for <span class="font-semibold text-white">Northern Trust</span>, one of the top 15 global institutional money managers.</div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-5 mt-1 flex-shrink-0"><i class="fa-solid fa-check text-emerald-400"></i></div>
+                                <div>Led social media and content creation for the <span class="font-semibold text-white">Rob Lucero for Congress</span> campaign in CA-34 (Los Angeles area).</div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="w-5 mt-1 flex-shrink-0"><i class="fa-solid fa-check text-emerald-400"></i></div>
+                                <div>Worked with high-profile YouTube creators building real businesses, including John Sonmez of Bulldog Mindset (nearly 390,000 subscribers), Stirling Cooper (over 410,000 subscribers), Lady Tina Leader (113,000 subscribers), and Gearhead Garage (35,000 subscribers).</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-5 mt-10 md:mt-0">
+                        <div class="bg-white/5 border border-white/10 rounded-3xl p-8 text-sm">
+                            <p class="italic text-slate-300">"This rare combination of deep Hollywood storytelling expertise, institutional financial content experience, and hands-on experience growing YouTube channels for business owners gives financial advisors a powerful advantage."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results -->
+    <div id="results" class="max-w-screen-xl mx-auto px-6 py-16">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-xs font-semibold tracking-[2px] text-slate-500">REAL RESULTS</span>
+                <h2 class="section-header tracking-tighter mt-3">What happens when you show up authentically in your community.</h2>
+            </div>
+            
+            <div class="clean-card rounded-3xl p-10 border-2">
+                <div class="flex items-center gap-x-4 mb-6">
+                    <div class="text-5xl font-semibold bg-gradient-to-r from-slate-900 to-blue-600 bg-clip-text text-transparent">600 → 3,000</div>
+                    <div class="text-sm leading-tight text-slate-500">YouTube subscribers in under a year</div>
+                </div>
+                
+                <p class="text-lg text-slate-700">Seaside Wealth Management’s YouTube channel grew from just 600 subscribers to nearly 3,000 while we produced and launched <span class="font-semibold">52 weekly episodes</span> of their podcast, <span class="italic">Navigating Retirement</span>, throughout 2025.</p>
+                
+                <div class="mt-6 pt-6 border-t border-slate-200">
+                    <p class="font-medium">More importantly:</p>
+                    <p class="mt-2 text-slate-600">The video strategy generated multiple <span class="font-semibold text-slate-900">multimillion-dollar leads</span> directly into their office from prospects who discovered them through authentic, hyper-local content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div id="testimonials" class="bg-white border-y border-slate-200 py-16">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center mb-12">
+                <span class="text-xs font-semibold tracking-[2px] text-slate-500">WHAT ADVISORS AND PARTNERS SAY</span>
+                <h2 class="section-header tracking-tighter mt-3">Real stories from real clients.</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class=”testimonial-card rounded-3xl p-9 border-2 border-slate-200 relative overflow-hidden group”>
+                    <div class=”absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300”></div>
+                    <div class=”relative z-10”>
+                        <div class=”flex items-center gap-x-4 mb-6”>
+                            <div class=”w-12 h-12 bg-gradient-to-br from-blue-300 to-blue-500 rounded-2xl flex-shrink-0 flex items-center justify-center text-white font-bold”>BL</div>
+                            <div>
+                                <div class=”font-semibold text-slate-900”>Brad Lineberger, CAP</div>
+                                <div class=”text-sm text-slate-500”>President &amp; Founder, Seaside Wealth Management</div>
+                            </div>
+                        </div>
+                        <blockquote class=”text-lg leading-relaxed text-slate-700”>
+                            “We worked with Sammy for three years and the experience was very positive. Sammy is a true professional who takes care of every detail while consistently delivering content on time.”
+                        </blockquote>
+                        <p class=”mt-6 text-sm text-slate-500”>We can’t say enough good things about Sammy.</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class=”testimonial-card rounded-3xl p-9 border-2 border-slate-200 relative overflow-hidden group”>
+                    <div class=”absolute inset-0 bg-gradient-to-br from-emerald-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300”></div>
+                    <div class=”relative z-10”>
+                        <div class=”flex items-center gap-x-4 mb-6”>
+                            <div class=”w-12 h-12 bg-gradient-to-br from-emerald-300 to-emerald-500 rounded-2xl flex-shrink-0 flex items-center justify-center text-white font-bold text-xs”>JM</div>
+                            <div>
+                                <div class=”font-semibold text-slate-900”>Jeff Rusin &amp; Matthew Awai</div>
+                                <div class=”text-sm text-slate-500”>Founders, Advisor Tech Partners</div>
+                            </div>
+                        </div>
+                        <blockquote class=”text-lg leading-relaxed text-slate-700”>
+                            “Thanks to Sammy’s guidance, we’ve seen amazing traction and growth in a short time on our YouTube channel. He encouraged us to niche down, post consistently, and experiment with different types of videos to discover what resonated most with our audience.”
+                        </blockquote>
+                        <p class=”mt-6 text-sm text-slate-500”>Sammy’s insights and support made all the difference.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing -->
+    <div id="pricing" class="max-w-screen-xl mx-auto px-6 py-16">
+        <div class="max-w-3xl mx-auto text-center mb-10">
+            <span class="text-xs font-semibold tracking-[2px] text-slate-500">INVESTMENT</span>
+            <h2 class="section-header tracking-tighter mt-3">Simple, transparent pricing.</h2>
+        </div>
+        
+        <div class="max-w-md mx-auto">
+            <div class="clean-card rounded-3xl p-10 border-2 border-slate-300 bg-gradient-to-br from-white to-slate-50 shadow-lg">
+                <div class="flex items-baseline justify-between">
+                    <div>
+                        <span class="text-5xl font-bold tracking-tighter bg-gradient-to-r from-slate-900 to-blue-600 bg-clip-text text-transparent">$10,000</span>
+                        <span class="text-slate-500">/month</span>
+                    </div>
+                </div>
+
+                <div class="mt-2 text-sm text-emerald-600 font-semibold">≈ $2,500 per fully produced episode</div>
+                
+                <div class="my-8 border-t border-slate-100"></div>
+                
+                <ul class="space-y-4 text-sm">
+                    <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>4 professionally filmed &amp; edited long-form episodes per month</span></li>
+                    <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Daily short-form clips posted across YouTube, X, and Instagram</span></li>
+                    <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Full YouTube channel + podcast setup and local SEO optimization</span></li>
+                    <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>On-site filming in your Southern California office</span></li>
+                    <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Personal Hollywood-level directing and hyper-local content strategy</span></li>
+                </ul>
+                
+                <a href="mailto:sarzoza@gmail.com"
+                   class="mt-8 block w-full text-center px-8 py-4 text-lg font-semibold bg-slate-900 hover:bg-black text-white rounded-3xl transition-all active:scale-[0.985]">
+                    Book your filming session
+                </a>
+                
+                <p class="text-center text-xs text-slate-500 mt-4">No long-term contract required. Cancel anytime.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guarantee -->
+    <div class="max-w-screen-xl mx-auto px-6 pb-16">
+        <div class="max-w-2xl mx-auto text-center bg-gradient-to-br from-emerald-50 to-emerald-100/50 border-2 border-emerald-200 rounded-3xl p-10">
+            <div class="inline-flex items-center justify-center w-14 h-14 bg-gradient-to-br from-emerald-400 to-emerald-600 text-white rounded-2xl mb-6">
+                <i class="fa-solid fa-shield-halved text-3xl"></i>
+            </div>
+            <h3 class="text-2xl font-semibold tracking-tight text-emerald-900">Completely risk-free.</h3>
+            <p class="mt-4 text-lg text-emerald-800">If you don’t love the first episode we produce together, we’ll re-film it at no charge or refund that month’s investment. Your success — and your reputation in your community — is the only thing that matters to us.</p>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="max-w-screen-xl mx-auto px-6 pb-20">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-xs font-semibold tracking-[2px] text-slate-500">QUESTIONS</span>
+                <h2 class="section-header tracking-tighter mt-3">Frequently asked questions</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="clean-card rounded-2xl p-7">
+                    <div class="font-semibold">Do I have to write scripts or come up with topics?</div>
+                    <div class="mt-2 text-slate-600">No. We brainstorm hyper-local topics together that are relevant to your specific community. I direct the conversation in real time so it flows naturally and authentically.</div>
+                </div>
+                
+                <div class="clean-card rounded-2xl p-7">
+                    <div class="font-semibold">Will I sound scripted or salesy?</div>
+                    <div class="mt-2 text-slate-600">The opposite. This format is built for genuine conversation. High-net-worth clients can spot scripted or AI content instantly. They want to know the real you.</div>
+                </div>
+                
+                <div class="clean-card rounded-2xl p-7">
+                    <div class="font-semibold">What if I’m camera-shy or “not good on video”?</div>
+                    <div class="mt-2 text-slate-600">That’s exactly why I’m there. I’ve directed actors and professionals for years. I give real-time, gentle direction to help you relax, use natural energy, and speak with warmth and authority.</div>
+                </div>
+                
+                <div class="clean-card rounded-2xl p-7">
+                    <div class="font-semibold">How fast can we launch?</div>
+                    <div class="mt-2 text-slate-600">We can usually schedule filming within 7–14 days. First episodes are typically live on YouTube and podcast platforms within 5–7 business days after filming.</div>
+                </div>
+                
+                <div class="clean-card rounded-2xl p-7">
+                    <div class="font-semibold">Is this only for Southern California advisors?</div>
+                    <div class="mt-2 text-slate-600">Yes, currently focused on advisors serving clients across Los Angeles, the Inland Empire, and Orange County so the content stays deeply local and relevant.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div id="book" class="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 py-20">
+        <div class="max-w-screen-xl mx-auto px-6 text-center">
+            <h2 class="text-white text-4xl md:text-5xl tracking-tighter font-bold">Ready to become the most visible advisor in your community?</h2>
+            <p class="mt-4 text-lg text-slate-200 max-w-md mx-auto">Let’s get you filmed, producing, and recognized — starting this month.</p>
+            
+            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:sarzoza@gmail.com"
+                   class="inline-flex items-center justify-center gap-x-3 px-10 py-4 text-lg font-semibold bg-white hover:bg-slate-100 text-slate-900 rounded-3xl transition-all active:scale-[0.985]">
+                    Book your 1-2 day on-site filming session
+                </a>
+                <a href="mailto:sarzoza@gmail.com"
+                   class="inline-flex items-center justify-center gap-x-2 px-8 py-4 text-lg font-medium text-white border border-white/30 hover:bg-white/10 rounded-3xl transition-all active:scale-[0.985]">
+                    Schedule a 15-minute discovery call
+                </a>
+            </div>
+            
+            <p class="mt-6 text-sm text-slate-400">Limited spots available for Q1 2026. Southern California only.</p>
+        </div>
+    </div>
+
+    <footer class="border-t border-slate-200 bg-gradient-to-b from-white to-slate-50 py-8">
+        <div class="max-w-screen-xl mx-auto px-6 text-center text-sm text-slate-600">
+            <p>© 2026 Advisor AV. All rights reserved. • Los Angeles, California</p>
+            <p class="mt-2 text-xs text-slate-500">Questions? <a href="mailto:sarzoza@gmail.com" class="text-blue-600 hover:text-blue-700 font-medium transition-colors">Get in touch</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#C9A227');
+        }
+
+        // Simple smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        initializeTailwind();
+
+        // Track page view
+        if (typeof window !== 'undefined' && window.location.hostname !== 'localhost') {
+            // Analytics can be added here
+        }
+    </script>
+    <!-- Google Analytics (add your GA ID) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script> -->
+</body>
+</html>
