@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisor AV | Become the Recognized Financial Advisor in the Twin Cities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --navy: #0A1628;
+            --gold: #C9A962;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .section-header {
+            font-size: 2.25rem;
+            line-height: 1.1;
+            font-weight: 700;
+            color: #0A1628;
+        }
+
+        .navy-bg {
+            background-color: #0A1628;
+        }
+
+        .gold-text {
+            color: #C9A962;
+        }
+
+        .gold-bg {
+            background-color: #C9A962;
+        }
+
+        .subtle-gold {
+            color: #C9A962;
+        }
+
+        .finance-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .finance-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .check-icon {
+            color: #C9A962;
+        }
+
+        .testimonial-card {
+            background: white;
+            border: 1px solid #E5E7EB;
+        }
+
+        .navy-text {
+            color: #0A1628;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0A1628 0%, #1a2a4a 100%);
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+    </style>
+</head>
+<body class="bg-white text-[#0A1628]">
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-[#0A1628] rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-2xl tracking-tighter">AV</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-2xl tracking-tight">Advisor AV</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#how-it-works" class="hover:text-[#C9A962] transition-colors">How It Works</a>
+                    <a href="#results" class="hover:text-[#C9A962] transition-colors">Results</a>
+                    <a href="#testimonials" class="hover:text-[#C9A962] transition-colors">Testimonials</a>
+                    <a href="#pricing" class="hover:text-[#C9A962] transition-colors">Pricing</a>
+                </div>
+
+                <div class="flex items-center gap-x-4">
+                    <a href="#schedule"
+                       class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-2xl bg-[#0A1628] text-white hover:bg-black transition-all">
+                        30 Min Discovery Call
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-16 pb-20">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-2xl mb-6">
+                    <div class="w-2 h-2 bg-[#C9A962] rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium tracking-wider">Now accepting Twin Cities advisors for <span id="accepting-month">&nbsp;</span></span>
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-6">
+                    Walk Into Your Local Coffee Shop in the Twin Cities<br>
+                    <span class="gold-text">and Hear Someone Say</span><br>
+                    “Hey, I Saw You on YouTube”
+                </h1>
+                
+                <p class="text-2xl md:text-3xl font-light tracking-tight text-white/90 max-w-3xl mx-auto mb-10">
+                    Become the recognized go-to financial advisor high-net-worth families in Minneapolis and Saint Paul actually choose.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#schedule"
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-x-3 px-9 py-4 text-lg font-semibold rounded-3xl bg-[#C9A962] text-[#0A1628] hover:bg-[#d4b87a] transition-all active:scale-[0.985]">
+                        <span>30 Min Discovery Call</span>
+                    </a>
+                    <a href="#how-it-works" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-x-3 px-8 py-4 text-lg font-semibold rounded-3xl border border-white/30 hover:bg-white/10 transition-all">
+                        See How It Works
+                    </a>
+                </div>
+                
+                <p class="mt-6 text-sm text-white/60">4 professionally produced episodes + daily shorts every month • Filmed in your office in just 1–2 days</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="border-b border-gray-200 bg-white py-5">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-sm text-gray-500">
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-[#C9A962]"></i>
+                    <span>Hollywood-trained production</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-[#C9A962]"></i>
+                    <span>Hyper-local Twin Cities focus</span>
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <i class="fa-solid fa-check text-[#C9A962]"></i>
+                    <span>100% hands-off for you</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-20 pb-16">
+        <div class="max-w-3xl">
+            <h2 class="section-header tracking-tighter mb-6">Most financial advisors in the Twin Cities are invisible in their own community.</h2>
+            
+            <div class="space-y-6 text-[17px] leading-relaxed text-gray-700">
+                <p>You’re already successful. You make good money. But in Minneapolis, Saint Paul, and the surrounding suburbs, almost no one outside your existing clients actually knows who you are.</p>
+                
+                <p>You can walk into a coffee shop in Edina, Stillwater, or downtown Minneapolis and remain completely invisible. High-net-worth families don’t want another generic national advisor. They want to know <span class="font-semibold text-[#0A1628]">you</span> — the person who actually lives and works in their community.</p>
+                
+                <p>The current options are broken: travel to a distant studio, film everything yourself and send footage overseas, or get handed AI-written scripts that sound exactly like every other advisor. That’s why so many strong advisors stay invisible while others win the clients who live right down the street.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="bg-[#F8F9FA] py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="max-w-3xl mb-12">
+                <h2 class="section-header tracking-tighter">Advisor AV helps you become the trusted local celebrity advisor families in the Twin Cities turn to.</h2>
+            </div>
+
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                <!-- Left column -->
+                <div class="md:col-span-7">
+                    <div class="prose prose-lg text-gray-700">
+                        <p class="text-xl font-light">Say goodbye to scripted AI content, tech headaches, travel, and one-size-fits-all national advice.</p>
+                        
+                        <p class="mt-6"><strong>Imagine walking into your favorite local coffee shop in Minneapolis or Saint Paul and someone you’ve never met says, “Hey, I saw you on YouTube…”</strong> That moment changes everything. Suddenly you’re not just another advisor — you’re the one they already know, like, and trust.</p>
+                    </div>
+
+                    <div class="mt-10 space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-6 h-6 mt-1 flex-shrink-0"><i class="fa-solid fa-check text-[#C9A962] text-xl"></i></div>
+                            <div>
+                                <div class="font-semibold">On-site filming in your office (1–2 days max)</div>
+                                <div class="text-gray-600">We bring everything. You just show up and talk. We film enough long-form episodes for a full month in a single visit.</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-6 h-6 mt-1 flex-shrink-0"><i class="fa-solid fa-check text-[#C9A962] text-xl"></i></div>
+                            <div>
+                                <div class="font-semibold">Completely hands-off production &amp; distribution</div>
+                                <div class="text-gray-600">We edit, design thumbnails, set up your YouTube channel and podcast platforms, write local SEO titles, and create daily short-form clips that drive traffic back to your full episodes.</div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-6 h-6 mt-1 flex-shrink-0"><i class="fa-solid fa-check text-[#C9A962] text-xl"></i></div>
+                            <div>
+                                <div class="font-semibold">Hollywood director &amp; screenwriter coaching</div>
+                                <div class="text-gray-600">I personally direct you on camera the way I’ve directed actors for years. We help you speak naturally and tell compelling local stories that feel like a genuine conversation with a neighbor — not a scripted pitch.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right column - Value props -->
+                <div class="md:col-span-5 bg-white rounded-3xl p-8 border border-gray-200">
+                    <div class="uppercase text-xs tracking-[2px] font-semibold text-gray-500 mb-4">What You Get Every Month</div>
+                    
+                    <ul class="space-y-4 text-[15px]">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-play text-[#C9A962] mt-1"></i>
+                            <span>4 professionally filmed &amp; edited long-form episodes</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-play text-[#C9A962] mt-1"></i>
+                            <span>Daily short-form clips posted across YouTube, X, and Instagram</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-play text-[#C9A962] mt-1"></i>
+                            <span>Full YouTube channel + podcast setup with local SEO optimization</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-play text-[#C9A962] mt-1"></i>
+                            <span>On-site filming in your Twin Cities office</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-play text-[#C9A962] mt-1"></i>
+                            <span>Personal Hollywood-level directing and hyper-local content strategy</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credibility Section -->
+    <section class="max-w-5xl mx-auto px-6 py-16">
+        <div class="max-w-3xl">
+            <h3 class="uppercase text-xs tracking-[2px] font-semibold text-gray-500 mb-3">LED BY</h3>
+            <h2 class="text-4xl font-bold tracking-tighter mb-6">Sammy Sarzoza</h2>
+            
+            <div class="text-[17px] leading-relaxed text-gray-700 space-y-5">
+                <p>A Hollywood-trained screenwriter, film director, and producer with nearly a decade of experience in post-production. He has delivered content for <strong>Northern Trust</strong>, one of the top 15 global institutional money managers. He also led social media and content creation for the <strong>Rob Lucero for Congress</strong> campaign in CA-34.</p>
+                
+                <p>Additionally, he has worked with high-profile YouTube creators who use their channels to build real businesses, including John Sonmez of Bulldog Mindset (nearly 390,000 subscribers), Stirling Cooper (over 410,000 subscribers), Lady Tina Leader (113,000 subscribers), and Gearhead Garage (35,000 subscribers).</p>
+                
+                <p class="font-medium text-[#0A1628]">This rare combination of deep Hollywood storytelling expertise, institutional financial content experience, and hands-on experience growing YouTube channels gives financial advisors in the Twin Cities a powerful advantage: video podcasts that feel genuinely human, look professionally produced, and actually attract high-net-worth clients in their local Minnesota communities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Results -->
+    <section id="results" class="bg-[#0A1628] text-white py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="max-w-3xl mb-10">
+                <div class="uppercase tracking-[2px] text-xs font-semibold text-[#C9A962] mb-3">REAL RESULTS</div>
+                <h2 class="text-4xl font-bold tracking-tighter">Seaside Wealth Management grew from 600 to nearly 3,000 YouTube subscribers</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white/5 rounded-3xl p-8">
+                    <div class="text-6xl font-bold tracking-tighter text-[#C9A962]">52</div>
+                    <div class="mt-2 text-lg">Weekly episodes produced in one year</div>
+                    <div class="text-sm text-white/60 mt-6">Every Wednesday — Navigating Retirement podcast</div>
+                </div>
+                <div class="bg-white/5 rounded-3xl p-8">
+                    <div class="text-6xl font-bold tracking-tighter text-[#C9A962]">5x</div>
+                    <div class="mt-2 text-lg">YouTube channel growth</div>
+                    <div class="text-sm text-white/60 mt-6">From 600 to nearly 3,000 subscribers</div>
+                </div>
+                <div class="bg-white/5 rounded-3xl p-8">
+                    <div class="text-6xl font-bold tracking-tighter text-[#C9A962]">Multiple</div>
+                    <div class="mt-2 text-lg">Multimillion-dollar leads</div>
+                    <div class="text-sm text-white/60 mt-6">Generated directly into their office from local prospects</div>
+                </div>
+            </div>
+            
+            <p class="text-center text-white/70 mt-8 text-sm max-w-md mx-auto">This is the kind of measurable growth and high-value client acquisition possible when you show up consistently and authentically in your own community.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="max-w-5xl mx-auto px-6 py-16">
+        <h2 class="text-center text-3xl font-bold tracking-tighter mb-10">What advisors and partners are saying</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card rounded-3xl p-8 border border-gray-200">
+                <div class="flex gap-1 text-[#C9A962] mb-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="text-lg leading-snug">
+                    “We worked with Sammy for three years and the experience was very positive. Sammy is a true professional who takes care of every detail while consistently delivering content on time.”
+                </blockquote>
+                <div class="mt-6 pt-6 border-t border-gray-100">
+                    <div class="font-semibold">Brad Lineberger, CAP</div>
+                    <div class="text-sm text-gray-600">President &amp; Founder, Seaside Wealth Management</div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card rounded-3xl p-8 border border-gray-200">
+                <div class="flex gap-1 text-[#C9A962] mb-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="text-lg leading-snug">
+                    “Thanks to Sammy’s guidance, we’ve seen amazing traction and growth in a short time on our YouTube channel. He encouraged us to niche down, post consistently, and experiment with different types of videos. Sammy’s insights and support made all the difference!”
+                </blockquote>
+                <div class="mt-6 pt-6 border-t border-gray-100">
+                    <div class="font-semibold">Jeff Rusin and Matthew Awai</div>
+                    <div class="text-sm text-gray-600">Founders, Advisor Tech Partners</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="bg-white border-t border-gray-100 py-16">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <div class="uppercase tracking-[2px] text-xs font-semibold text-gray-500">SIMPLE PROCESS</div>
+                <h2 class="text-4xl font-bold tracking-tighter mt-2">How it works</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="mx-auto w-14 h-14 rounded-2xl bg-[#0A1628] text-white flex items-center justify-center text-2xl font-bold mb-5">1</div>
+                    <div class="font-semibold text-xl mb-2">We come to you</div>
+                    <p class="text-gray-600">I arrive at your office in the Twin Cities with full professional equipment. You just show up and talk.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto w-14 h-14 rounded-2xl bg-[#0A1628] text-white flex items-center justify-center text-2xl font-bold mb-5">2</div>
+                    <div class="font-semibold text-xl mb-2">We film everything</div>
+                    <p class="text-gray-600">In just 1–2 days we capture 4+ long-form episodes plus material for daily shorts — all hyper-local to Minneapolis and Saint Paul.</p>
+                </div>
+                <div class="text-center">
+                    <div class="mx-auto w-14 h-14 rounded-2xl bg-[#0A1628] text-white flex items-center justify-center text-2xl font-bold mb-5">3</div>
+                    <div class="font-semibold text-xl mb-2">We handle everything else</div>
+                    <p class="text-gray-600">Editing, thumbnails, YouTube setup, podcast distribution, SEO titles, and daily short-form clips — all done for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="max-w-4xl mx-auto px-6 py-16">
+        <div class="text-center mb-10">
+            <div class="uppercase tracking-[2px] text-xs font-semibold text-gray-500">INVESTMENT</div>
+            <h2 class="text-4xl font-bold tracking-tighter mt-2">$10,000 per month</h2>
+            <p class="text-xl text-gray-600 mt-2">4 episodes + daily shorts • Full production &amp; distribution</p>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-3xl p-10 max-w-3xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-x-10 gap-y-6 text-sm">
+                <div>
+                    <div class="font-semibold mb-2 text-[#0A1628]">What’s included:</div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex gap-2"><i class="fa-solid fa-check text-[#C9A962] mt-1"></i> 4 long-form episodes per month</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check text-[#C9A962] mt-1"></i> Daily short-form clips (YouTube, X, Instagram)</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check text-[#C9A962] mt-1"></i> Full YouTube + podcast channel setup</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check text-[#C9A962] mt-1"></i> Local SEO optimization for Twin Cities</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check text-[#C9A962] mt-1"></i> On-site filming in your office</li>
+                        <li class="flex gap-2"><i class="fa-solid fa-check text-[#C9A962] mt-1"></i> Hollywood-level directing &amp; coaching</li>
+                    </ul>
+                </div>
+                <div class="pt-6 md:pt-0 border-t md:border-t-0 md:border-l border-gray-100 pl-0 md:pl-10">
+                    <div class="text-sm text-gray-600">Most advisors who try to do this themselves spend $15,000–$40,000+ per year with generic results. Other done-for-you programs charge similar fees but deliver scripted, national content that could belong to any advisor anywhere.</div>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-100">
+                        <div class="text-xs uppercase tracking-wider text-gray-500">Your advantage</div>
+                        <div class="font-semibold mt-1">Roughly $2,500 per fully produced and distributed episode — with content that actually makes you known in your own community.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="max-w-3xl mx-auto px-6 pb-16 text-center">
+        <div class="inline-block bg-[#F8F9FA] rounded-3xl px-8 py-8">
+            <div class="font-semibold text-xl tracking-tight">Risk-free guarantee</div>
+            <p class="mt-3 text-gray-700 max-w-md mx-auto">If you don’t love the first episode we produce together, we’ll re-film it at no charge or refund that month’s investment. Your success and reputation in the Twin Cities community is what matters most.</p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="max-w-3xl mx-auto px-6 pb-20">
+        <h2 class="text-3xl font-bold tracking-tighter text-center mb-10">Frequently Asked Questions</h2>
+        
+        <div class="space-y-6 text-[15px]">
+            <div>
+                <div class="font-semibold">Do I have to write scripts or come up with topics?</div>
+                <div class="text-gray-600 mt-1">No. We brainstorm hyper-local topics together that are relevant to your specific community in the Twin Cities. I direct the conversation in real time so it flows naturally and authentically.</div>
+            </div>
+            <div>
+                <div class="font-semibold">Will I sound scripted or salesy?</div>
+                <div class="text-gray-600 mt-1">The opposite. This format is built for genuine conversation. High-net-worth clients can spot scripted or AI content instantly. They want to know the real you.</div>
+            </div>
+            <div>
+                <div class="font-semibold">What if I’m camera-shy or “not good on video”?</div>
+                <div class="text-gray-600 mt-1">That’s exactly why I’m there. I’ve directed actors and professionals for years. I give real-time, gentle direction to help you relax, use natural energy, and speak with warmth and authority.</div>
+            </div>
+            <div>
+                <div class="font-semibold">How fast can we launch?</div>
+                <div class="text-gray-600 mt-1">We can usually schedule filming within 7–14 days. First episodes are typically live within 5–7 business days after filming. Daily shorts begin posting right away.</div>
+            </div>
+            <div>
+                <div class="font-semibold">Do I own the content?</div>
+                <div class="text-gray-600 mt-1">Yes — you own 100% of the footage, episodes, and clips.</div>
+            </div>
+            <div>
+                <div class="font-semibold">Is this only for Minnesota advisors?</div>
+                <div class="text-gray-600 mt-1">Yes, this version is currently focused on advisors serving clients across Minneapolis, Saint Paul, and the surrounding Twin Cities metro area so the content stays deeply local and relevant.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="book" class="bg-[#0A1628] text-white py-16">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold tracking-tighter">Ready to become the most visible and trusted financial advisor in the Twin Cities?</h2>
+            <p class="mt-4 text-white/80 text-lg">Let’s make you the advisor your community already knows and trusts.</p>
+            
+            <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#schedule" class="inline-flex items-center justify-center px-9 py-4 text-lg font-semibold rounded-3xl bg-[#C9A962] text-[#0A1628] hover:bg-[#d4b87a] transition-all">
+                    30 Min Discovery Call
+                </a>
+            </div>
+            <p class="mt-4 text-sm text-white/60">Or schedule a quick 30-minute discovery call to see if Advisor AV is the right fit.</p>
+        </div>
+    </section>
+
+    <!-- Booking / Schedule -->
+    <section id="schedule" class="relative overflow-hidden bg-[#F8F9FA] border-t border-gray-200 py-20">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#C9A962]/10 rounded-full blur-3xl"></div>
+        </div>
+        <div class="relative max-w-5xl mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center mb-10">
+                <span class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full bg-[#0A1628] text-white text-xs font-semibold tracking-[2px]">
+                    <span class="w-2 h-2 bg-[#C9A962] rounded-full animate-pulse"></span>
+                    PICK A TIME
+                </span>
+                <h2 class="section-header tracking-tighter mt-5">Book your discovery call</h2>
+                <p class="mt-4 text-lg text-gray-600">Grab a 30-minute slot below. We’ll talk through your Twin Cities community, your goals, and how we can get you filmed and recognized — starting this month.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl border border-gray-200 shadow-xl shadow-black/[0.06] p-2 sm:p-4">
+                    <!-- Cal inline embed -->
+                    <div style="width:100%;min-height:640px;overflow:auto" id="my-cal-inline-30min"></div>
+                </div>
+
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-gray-500">
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-clock text-[#C9A962]"></i><span>30-minute call</span></div>
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-video text-[#C9A962]"></i><span>Video or phone</span></div>
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-envelope text-[#C9A962]"></i><span>Prefer email? <a href="mailto:sarzoza@gmail.com" class="font-medium text-[#0A1628] hover:text-[#C9A962] underline">sarzoza@gmail.com</a></span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cal.com embed script -->
+        <script type="text/javascript">
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+            Cal("init", "30min", {origin:"https://app.cal.com"});
+            Cal.config = Cal.config || {};
+            Cal.config.forwardQueryParams = true;
+
+            Cal.ns["30min"]("inline", {
+                elementOrSelector:"#my-cal-inline-30min",
+                config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"light"},
+                calLink: "sarzoza/30min",
+            });
+
+            Cal.ns["30min"]("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#0A1628"}},"styles":{"branding":{"brandColor":"#0A1628"}},"hideEventTypeDetails":false,"layout":"month_view"});
+        </script>
+    </section>
+
+    <footer class="border-t border-gray-200 py-8 text-center text-sm text-gray-500">
+        <div class="max-w-5xl mx-auto px-6">
+            © Advisor AV — Hyper-local video podcasts for financial advisors in the Twin Cities.<br>
+            <span class="text-xs">Minneapolis • Saint Paul • Minnesota</span>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Auto-update the "Now accepting … for <Month Year>" badge
+        (function setAcceptingMonth() {
+            const el = document.getElementById('accepting-month');
+            if (el) {
+                el.textContent = new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' });
+            }
+        })();
+
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent-gold', '#C9A962');
+        }
+        window.onload = initializeTailwind;
+    </script>
+</body>
+</html>

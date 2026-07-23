@@ -257,13 +257,9 @@
                 </div>
                 
                 <div class="flex items-center gap-x-4">
-                    <a href="mailto:sarzoza@gmail.com"
-                       class="hidden md:inline-flex items-center justify-center px-6 py-3 text-sm font-semibold bg-white border border-slate-300 hover:bg-slate-50 text-slate-900 rounded-2xl transition-all active:scale-[0.985]">
-                        Book a call
-                    </a>
-                    <a href="mailto:sarzoza@gmail.com"
+                    <a href="#schedule"
                        class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold bg-slate-900 hover:bg-slate-800 text-white rounded-2xl transition-all active:scale-[0.985]">
-                        Start today
+                        30 Min Discovery Call
                     </a>
                 </div>
             </div>
@@ -275,7 +271,7 @@
         <div class="max-w-4xl mx-auto text-center">
             <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-sm font-medium mb-6">
                 <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-                Now accepting Southern California advisors for Q1 2026
+                Now accepting Southern California advisors for <span id="accepting-month">&nbsp;</span>
             </div>
             
             <h1 class="text-5xl md:text-6xl leading-[1.05] tracking-tighter font-semibold text-slate-900 mb-6">
@@ -288,9 +284,9 @@
             </p>
             
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="mailto:sarzoza@gmail.com"
+                <a href="#schedule"
                    class="w-full sm:w-auto inline-flex items-center justify-center gap-x-3 px-8 py-4 text-lg font-semibold bg-slate-900 hover:bg-black text-white rounded-3xl transition-all active:scale-[0.985]">
-                    <span>Book your 1-2 day filming session</span>
+                    <span>30 Min Discovery Call</span>
                 </a>
                 <a href="#how-it-works"
                    class="w-full sm:w-auto inline-flex items-center justify-center gap-x-2 px-8 py-4 text-lg font-semibold border border-slate-300 hover:bg-white text-slate-700 rounded-3xl transition-all active:scale-[0.985]">
@@ -556,9 +552,9 @@
                     <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Personal Hollywood-level directing and hyper-local content strategy</span></li>
                 </ul>
                 
-                <a href="mailto:sarzoza@gmail.com"
+                <a href="#schedule"
                    class="mt-8 block w-full text-center px-8 py-4 text-lg font-semibold bg-slate-900 hover:bg-black text-white rounded-3xl transition-all active:scale-[0.985]">
-                    Book your filming session
+                    30 Min Discovery Call
                 </a>
                 
                 <p class="text-center text-xs text-slate-500 mt-4">No long-term contract required. Cancel anytime.</p>
@@ -621,19 +617,61 @@
             <p class="mt-4 text-lg text-slate-200 max-w-md mx-auto">Let’s get you filmed, producing, and recognized — starting this month.</p>
             
             <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="mailto:sarzoza@gmail.com"
+                <a href="#schedule"
                    class="inline-flex items-center justify-center gap-x-3 px-10 py-4 text-lg font-semibold bg-white hover:bg-slate-100 text-slate-900 rounded-3xl transition-all active:scale-[0.985]">
-                    Book your 1-2 day on-site filming session
-                </a>
-                <a href="mailto:sarzoza@gmail.com"
-                   class="inline-flex items-center justify-center gap-x-2 px-8 py-4 text-lg font-medium text-white border border-white/30 hover:bg-white/10 rounded-3xl transition-all active:scale-[0.985]">
-                    Schedule a 15-minute discovery call
+                    30 Min Discovery Call
                 </a>
             </div>
             
             <p class="mt-6 text-sm text-slate-400">Limited spots available for Q1 2026. Southern California only.</p>
         </div>
     </div>
+
+    <!-- Booking / Schedule -->
+    <section id="schedule" class="relative bg-gradient-to-b from-slate-50 via-white to-slate-50 border-t border-slate-200 py-20 overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-br from-blue-100/40 to-transparent rounded-full blur-3xl"></div>
+        </div>
+        <div class="relative max-w-screen-xl mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center mb-10">
+                <span class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full bg-slate-900 text-white text-xs font-semibold tracking-[2px]">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                    PICK A TIME
+                </span>
+                <h2 class="section-header tracking-tighter mt-5">Book your discovery call</h2>
+                <p class="mt-4 text-lg text-slate-600">Grab a 30-minute slot below. We’ll talk through your community, your goals, and how we can get you filmed and recognized — starting this month.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl border border-slate-200 shadow-xl shadow-slate-900/[0.06] p-2 sm:p-4">
+                    <!-- Cal inline embed -->
+                    <div style="width:100%;min-height:640px;overflow:auto" id="my-cal-inline-30min"></div>
+                </div>
+
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-slate-500">
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-clock text-emerald-500"></i><span>30-minute call</span></div>
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-video text-emerald-500"></i><span>Video or phone</span></div>
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-shield-halved text-emerald-500"></i><span>No pressure, no obligation</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cal.com embed script -->
+        <script type="text/javascript">
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+            Cal("init", "30min", {origin:"https://app.cal.com"});
+            Cal.config = Cal.config || {};
+            Cal.config.forwardQueryParams = true;
+
+            Cal.ns["30min"]("inline", {
+                elementOrSelector:"#my-cal-inline-30min",
+                config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"light"},
+                calLink: "sarzoza/30min",
+            });
+
+            Cal.ns["30min"]("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#0F172A"}},"styles":{"branding":{"brandColor":"#0F172A"}},"hideEventTypeDetails":false,"layout":"month_view"});
+        </script>
+    </section>
 
     <footer class="border-t border-slate-200 bg-gradient-to-b from-white to-slate-50 py-8">
         <div class="max-w-screen-xl mx-auto px-6 text-center text-sm text-slate-600">
@@ -643,6 +681,14 @@
     </footer>
 
     <script>
+        // Auto-update the "Now accepting … for <Month Year>" badge
+        (function setAcceptingMonth() {
+            const el = document.getElementById('accepting-month');
+            if (el) {
+                el.textContent = new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' });
+            }
+        })();
+
         // Tailwind script
         function initializeTailwind() {
             document.documentElement.style.setProperty('--accent', '#C9A227');

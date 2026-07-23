@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisor AV | Professional Masterclass Production</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --navy: #0A1628;
+            --gold: #C9A227;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .section-header {
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            color: #0A1628;
+        }
+
+        .navy {
+            color: #0A1628;
+        }
+
+        .gold {
+            color: #C9A227;
+        }
+
+        .gold-bg {
+            background-color: #C9A227;
+        }
+
+        .navy-bg {
+            background-color: #0A1628;
+        }
+
+        .card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .benefit-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #F8F1E3;
+            color: #C9A227;
+            border-radius: 9999px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #0A1628;
+        }
+
+        .premium-shadow {
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+    <!-- Navigation -->
+    <nav class="border-b border-slate-200 bg-white">
+        <div class="max-w-screen-xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 rounded-xl navy-bg flex items-center justify-center">
+                    <span class="text-white font-bold text-2xl tracking-tighter">AV</span>
+                </div>
+                <div>
+                    <span class="font-semibold text-2xl tracking-tight navy">Advisor AV</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                <a href="#how-it-works" class="hover:text-[#C9A227] transition-colors">How it Works</a>
+                <a href="#sample" class="hover:text-[#C9A227] transition-colors">See the Quality</a>
+                <a href="#pricing" class="hover:text-[#C9A227] transition-colors">Pricing</a>
+            </div>
+            <div>
+                <a href="#schedule"
+                   class="inline-flex items-center justify-center px-6 py-2.5 rounded-xl navy-bg text-white text-sm font-semibold hover:bg-[#0A1628]/90 transition-all active:scale-[0.985]">
+                    Book Discovery Call
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="max-w-screen-xl mx-auto px-6 pt-16 pb-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full bg-[#F8F1E3] text-[#C9A227] text-sm font-semibold mb-6">
+                <i class="fa-solid fa-video mr-2"></i>
+                <span>One-Time Project • $30,000 – $35,000</span>
+            </div>
+            
+            <h1 class="heading-serif text-5xl md:text-6xl leading-[1.05] tracking-tighter navy mb-6">
+                Stop Wasting Dozens of Hours Every Month<br>Re-Teaching the Same Class
+            </h1>
+            
+            <p class="max-w-2xl mx-auto text-xl text-slate-600 mb-10">
+                Turn the workshop or seminar you already teach into a polished, professional 2-hour masterclass you can give away as a powerful lead magnet.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#schedule"
+                   class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-2xl navy-bg text-white font-semibold text-lg hover:bg-[#0A1628]/90 transition-all active:scale-[0.985]">
+                    Book a Discovery Call
+                </a>
+                <a href="#sample" 
+                   class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-2xl border border-slate-300 font-semibold text-lg hover:bg-slate-50 transition-all">
+                    Watch 90-Second Sample
+                </a>
+            </div>
+            
+            <p class="mt-6 text-sm text-slate-500">These are significant projects. I only take on a limited number each year.</p>
+        </div>
+    </div>
+
+    <!-- Problem Section -->
+    <div class="bg-slate-50 py-16">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="section-header mb-8">You Already Know This Feels Familiar</h2>
+                
+                <div class="prose prose-lg text-slate-600">
+                    <p>If you run a successful financial advisory or wealth management firm, you’ve probably taught the same retirement workshop, tax seminar, or estate planning class multiple times.</p>
+                    
+                    <p class="mt-4">Now imagine how much time you and your associate advisors are spending re-delivering that same content over and over again — planning the presentation, setting up, teaching live, answering the same questions, then doing it all again next month for a new group.</p>
+                    
+                    <p class="mt-4">As your firm grows and you bring on associate advisors, the problem gets worse. Your team spends valuable hours repeating the same educational content instead of focusing on high-value client work or bringing in new business.</p>
+                    
+                    <p class="mt-4">Most advisors who try to turn their live workshop into a professional recorded masterclass never finish it — or it ends up looking amateur because they don’t have the time or production expertise to do it right.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solution Section -->
+    <div class="max-w-screen-xl mx-auto px-6 py-20">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="section-header mb-4">Create It Once. Use It Repeatedly.</h2>
+            <p class="text-xl text-slate-600 mb-10">Advisor AV Masterclass Production turns the class you already teach into a polished, professional asset you can use for years.</p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Benefit 1 -->
+                <div class="card bg-white border border-slate-200 rounded-3xl p-8">
+                    <div class="benefit-icon mb-6">
+                        <i class="fa-solid fa-clock text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl mb-3">Stop Repeating Yourself</h3>
+                    <p class="text-slate-600">You already teach this class. You already have a structure that works. We make smart adjustments so it flows naturally on camera — then we record it professionally. No heavy scripting. No starting from scratch.</p>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="card bg-white border border-slate-200 rounded-3xl p-8">
+                    <div class="benefit-icon mb-6">
+                        <i class="fa-solid fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl mb-3">We Come to You</h3>
+                    <p class="text-slate-600">On-site filming in your office (1–2 days). No travel. No remote setup. No figuring out technology. We handle everything at your location so you can focus on delivering your expertise naturally.</p>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="card bg-white border border-slate-200 rounded-3xl p-8">
+                    <div class="benefit-icon mb-6">
+                        <i class="fa-solid fa-video text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl mb-3">Easy, Conversational Recording</h3>
+                    <p class="text-slate-600">We don’t make you read a script. We record you teaching the way you already teach — in a natural, easy-to-follow, and engaging way. You just show up and do what you already do well.</p>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="card bg-white border border-slate-200 rounded-3xl p-8">
+                    <div class="benefit-icon mb-6">
+                        <i class="fa-solid fa-gift text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-xl mb-3">Ready-to-Use Lead Magnet</h3>
+                    <p class="text-slate-600">Delivered in formats you can easily give away after great meetings, host on your website, or use in seminars and onboarding. Create it once. Use it for years.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- See the Quality Section -->
+    <div id="sample" class="bg-[#0A1628] py-16 text-white">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center mb-10">
+                <h2 class="text-3xl font-semibold tracking-tight mb-4">See the Quality for Yourself</h2>
+                <p class="text-lg text-slate-300">Watch a short 90-second sample from the full 2-hour Retirement Masterclass we produced for Seaside Wealth Management.</p>
+            </div>
+
+            <!-- Video Placeholder -->
+            <div class="max-w-4xl mx-auto">
+                <div class="aspect-video bg-slate-800 rounded-3xl flex items-center justify-center border border-white/10 relative overflow-hidden">
+                    <div class="text-center">
+                        <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-white/10 flex items-center justify-center">
+                            <i class="fa-solid fa-play text-white text-4xl ml-1"></i>
+                        </div>
+                        <p class="font-medium">90-Second Sample Video</p>
+                        <p class="text-sm text-slate-400 mt-1">(Replace this with your actual video embed)</p>
+                    </div>
+                </div>
+                <p class="text-center text-sm text-slate-400 mt-4">This is the same production quality and directing style you’ll receive. The full masterclass is available for private review after we speak.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Proof -->
+    <div class="max-w-screen-xl mx-auto px-6 py-16">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="section-header mb-8">Real Results from Financial Advisors</h2>
+            
+            <div class="bg-white border border-slate-200 rounded-3xl p-8">
+                <p class="text-lg">Seaside Wealth Management now uses the full Retirement Masterclass we produced for them as a lead-generation tool — giving prospects substantial value upfront and positioning the firm as the clear expert on retirement planning.</p>
+                <div class="mt-6 flex items-center gap-x-4">
+                    <img src="brad.png" alt="Brad Lineberger, CAP" class="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy">
+                    <div>
+                        <p class="font-semibold">Brad Lineberger, CAP</p>
+                        <p class="text-sm text-slate-500">President &amp; Founder, Seaside Wealth Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="bg-slate-50 py-16">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="section-header mb-8">What Advisors Are Saying</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white border border-slate-200 rounded-3xl p-8">
+                        <p class="italic">"The masterclass Sammy produced for us has become one of our best lead magnets. Prospects watch it and come in already educated and ready to talk. It’s also saved our team hours of repeating the same presentation."</p>
+                        <div class="mt-6 flex items-center gap-x-4">
+                            <img src="brad.png" alt="Brad Lineberger, CAP" class="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy">
+                            <div>
+                                <p class="font-semibold">Brad Lineberger, CAP</p>
+                                <p class="text-sm text-slate-500">President &amp; Founder, Seaside Wealth Management</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border border-slate-200 rounded-3xl p-8">
+                        <p class="italic">"Working with Sammy was seamless. He came to our office, understood exactly what we needed, and delivered a professional masterclass that we now use regularly with prospects. Highly recommend."</p>
+                        <div class="mt-6">
+                            <p class="font-semibold">Jeff Rusin &amp; Matthew Awai</p>
+                            <p class="text-sm text-slate-500">Founders, Advisor Tech Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing + Scarcity -->
+    <div id="pricing" class="max-w-screen-xl mx-auto px-6 py-20">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="section-header mb-4">Investment</h2>
+            <p class="text-xl text-slate-600 mb-8">One-time project. Complete, professional masterclass on the topic of your choice.</p>
+            
+            <div class="inline-block bg-white border border-slate-200 rounded-3xl px-12 py-10 text-left">
+                <div class="flex items-baseline gap-x-2 mb-2">
+                    <span class="text-5xl font-semibold tracking-tighter navy">$30,000</span>
+                    <span class="text-2xl text-slate-400">– $35,000</span>
+                </div>
+                <p class="text-slate-600">One-time payment • Includes everything</p>
+                
+                <ul class="mt-8 space-y-3 text-sm">
+                    <li class="flex items-start gap-x-3"><i class="fa-solid fa-check text-[#C9A227] mt-1"></i> <span>Full content mapping &amp; light adjustments</span></li>
+                    <li class="flex items-start gap-x-3"><i class="fa-solid fa-check text-[#C9A227] mt-1"></i> <span>On-site filming in your office (1–2 days)</span></li>
+                    <li class="flex items-start gap-x-3"><i class="fa-solid fa-check text-[#C9A227] mt-1"></i> <span>Professional directing &amp; Hollywood-level production</span></li>
+                    <li class="flex items-start gap-x-3"><i class="fa-solid fa-check text-[#C9A227] mt-1"></i> <span>Complete editing, graphics, branding &amp; delivery</span></li>
+                    <li class="flex items-start gap-x-3"><i class="fa-solid fa-check text-[#C9A227] mt-1"></i> <span>Ready-to-use lead magnet formats</span></li>
+                </ul>
+            </div>
+
+            <div class="mt-8 max-w-md mx-auto">
+                <p class="text-sm text-slate-600">These are significant projects, and I only take on a limited number each year to ensure every masterclass receives the full attention and quality it deserves.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guarantee -->
+    <div class="max-w-screen-xl mx-auto px-6 pb-16">
+        <div class="max-w-2xl mx-auto bg-[#F8F1E3] rounded-3xl p-8 text-center">
+            <h3 class="font-semibold text-xl mb-3">Risk-Free Guarantee</h3>
+            <p class="text-slate-700">This is a one-time project with clear deliverables. If you’re not satisfied with the final masterclass, we’ll make revisions until it meets your standards — at no additional cost.</p>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="max-w-screen-xl mx-auto px-6 pb-20">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="section-header mb-8">Frequently Asked Questions</h2>
+            
+            <div class="space-y-4">
+                <div class="border border-slate-200 rounded-2xl p-6">
+                    <p class="faq-question">How long does it take to produce a masterclass?</p>
+                    <p class="mt-2 text-slate-600">Most projects are completed within 3–5 weeks from our first planning call, depending on your availability for filming.</p>
+                </div>
+                
+                <div class="border border-slate-200 rounded-2xl p-6">
+                    <p class="faq-question">Can it be on any topic?</p>
+                    <p class="mt-2 text-slate-600">Yes. Retirement planning, wills &amp; trusts, tax strategies, Social Security optimization, long-term care, or any other financial topic where you or your team have expertise.</p>
+                </div>
+                
+                <div class="border border-slate-200 rounded-2xl p-6">
+                    <p class="faq-question">Do I have to write a full script or rewrite everything?</p>
+                    <p class="mt-2 text-slate-600">No. You already teach this class (or someone on your team does). You already have a structure that works. We review what you already teach, make smart adjustments so it flows naturally on camera, and record you teaching in your natural style — easy to follow and conversational.</p>
+                </div>
+                
+                <div class="border border-slate-200 rounded-2xl p-6">
+                    <p class="faq-question">Will it look professional?</p>
+                    <p class="mt-2 text-slate-600">Yes. This is Hollywood-level production quality — the same standard used for the Seaside Wealth Management Retirement Masterclass.</p>
+                </div>
+                
+                <div class="border border-slate-200 rounded-2xl p-6">
+                    <p class="faq-question">Do I own the final masterclass?</p>
+                    <p class="mt-2 text-slate-600">Yes — you own 100% of the content and can use it however you like.</p>
+                </div>
+                
+                <div class="border border-slate-200 rounded-2xl p-6">
+                    <p class="faq-question">Is this only available in Southern California?</p>
+                    <p class="mt-2 text-slate-600">No. This service is available nationwide. We are currently focused on working with advisors in Southern California and the Twin Cities (Minneapolis–Saint Paul) area.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div id="cta" class="navy-bg py-16 text-white">
+        <div class="max-w-screen-xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold tracking-tight mb-4">Ready to Stop Repeating Yourself?</h2>
+            <p class="max-w-md mx-auto text-lg text-white/80 mb-8">Let’s discuss your topic and see if a custom masterclass is the right fit for your firm right now.</p>
+            
+            <a href="#schedule"
+               class="inline-flex items-center justify-center px-10 py-4 rounded-2xl bg-white text-[#0A1628] font-semibold text-lg hover:bg-white/90 transition-all active:scale-[0.985]">
+                Book Your Discovery Call
+            </a>
+            
+            <p class="mt-6 text-sm text-white/60">Limited spots available each year • No obligation</p>
+        </div>
+    </div>
+
+    <!-- Booking / Schedule -->
+    <section id="schedule" class="relative overflow-hidden bg-slate-50 border-t border-slate-200 py-20">
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#C9A227]/10 rounded-full blur-3xl"></div>
+        </div>
+        <div class="relative max-w-screen-xl mx-auto px-6">
+            <div class="max-w-2xl mx-auto text-center mb-10">
+                <span class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-full navy-bg text-white text-xs font-semibold tracking-[2px]">
+                    <span class="w-2 h-2 bg-[#C9A227] rounded-full animate-pulse"></span>
+                    PICK A TIME
+                </span>
+                <h2 class="section-header tracking-tighter mt-5">Book your discovery call</h2>
+                <p class="mt-4 text-lg text-slate-600">Grab a 30-minute slot below. We’ll talk through your topic and see if a custom masterclass is the right fit for your firm.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl border border-slate-200 premium-shadow p-2 sm:p-4">
+                    <!-- Cal inline embed -->
+                    <div style="width:100%;min-height:640px;overflow:auto" id="my-cal-inline-30min"></div>
+                </div>
+
+                <div class="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-slate-500">
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-clock text-[#C9A227]"></i><span>30-minute call</span></div>
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-video text-[#C9A227]"></i><span>Video or phone</span></div>
+                    <div class="flex items-center gap-x-2"><i class="fa-solid fa-envelope text-[#C9A227]"></i><span>Prefer email? <a href="mailto:sarzoza@gmail.com" class="font-medium text-[#0A1628] hover:text-[#C9A227] underline">sarzoza@gmail.com</a></span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cal.com embed script -->
+        <script type="text/javascript">
+            (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+            Cal("init", "30min", {origin:"https://app.cal.com"});
+            Cal.config = Cal.config || {};
+            Cal.config.forwardQueryParams = true;
+
+            Cal.ns["30min"]("inline", {
+                elementOrSelector:"#my-cal-inline-30min",
+                config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"light"},
+                calLink: "sarzoza/30min",
+            });
+
+            Cal.ns["30min"]("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#0A1628"}},"styles":{"branding":{"brandColor":"#0A1628"}},"hideEventTypeDetails":false,"layout":"month_view"});
+        </script>
+    </section>
+
+    <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
+        <p>© Advisor AV. Professional Masterclass Production for Financial Advisors.</p>
+    </footer>
+
+    <script>
+        // Simple smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

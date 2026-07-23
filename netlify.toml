@@ -7,6 +7,16 @@
   publish = "."
 
 [[redirects]]
+  from = "/mn"
+  to = "/mn.html"
+  status = 200
+
+[[redirects]]
+  from = "/class"
+  to = "/class.html"
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/lp.html"
   status = 200
